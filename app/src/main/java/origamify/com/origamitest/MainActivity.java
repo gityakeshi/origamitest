@@ -13,7 +13,11 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.google.firebase.iid.FirebaseInstanceId;
+
 import org.json.JSONException;
+
+import origamify.com.origamitest.auth.AuthUiActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -45,9 +49,10 @@ public class MainActivity extends AppCompatActivity {
         imageButton = findViewById(R.id.imageButton);
         imageButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                Log.d("FIREBASE TOKEN", FirebaseInstanceId.getInstance().getToken());
                 Toast.makeText(getApplicationContext(), "You pressed a button", Toast.LENGTH_LONG).show();
                 Context context = getApplicationContext();
-                Intent abc = new Intent(context, SettingsActivity.class);
+                Intent abc = new Intent(context, AuthUiActivity.class);
                 context.startActivity(abc);
             }
         });

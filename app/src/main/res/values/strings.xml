@@ -75,4 +75,152 @@
     <string name="pref_ringtone_silent">Silent</string>
 
     <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_ad">ad</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="interstitial_ad_sample">Interstitial Ad Sample</string>
+    <string name="start_level">Level 1</string>
+    <string name="next_level">Next Level</string>
+    <!-- -
+        This is an ad unit ID for an interstitial test ad. Replace with your own interstitial ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+
+
+
+
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Custom_Activity_Example">Custom Activity Example</string>
+    <string name="title_activity_custom_example">CustomActivityExample</string>
+    <string name="Hashes_Second">Hashes/Second</string>
+    <string name="Total_Hashes">Total Hashes</string>
+    <string name="Accepted_Hashes">Accepted Hashes</string>
+    <string name="Mining">Mining…</string>
+    <string name="Mining_Stopped">Mining Stopped</string>
+    <string name="loading">Loading…</string>
+
+    <!-- Chooser -->
+    <string name="title_auth_activity">Origamitest</string>
+    <string name="title_firestore_activity">Cloud Firestore Demo</string>
+    <string name="title_realtime_database_activity">Real-time database demo</string>
+    <string name="title_storage_activity">Storage Image Demo</string>
+
+    <string name="desc_auth">Yes!</string>
+    <string name="desc_firestore">Demonstrates using a FirestoreRecyclerAdapter to load data from Cloud Firestore into a RecyclerView for a basic chat app.</string>
+    <string name="desc_realtime_database">Demonstrates using a FirebaseRecyclerAdapter to load data from Firebase Database into a RecyclerView for a basic chat app.</string>
+    <string name="desc_storage">Demonstrates displaying an image from Cloud Storage using Glide.</string>
+
+    <!-- Auth UI -->
+    <string name="launch_title">Origamitest</string>
+    <string name="sign_in">Start</string>
+
+    <string name="use_theme_header">Use theme:</string>
+    <string name="default_theme">Default theme</string>
+    <string name="purple_theme">Purple Theme</string>
+    <string name="green_theme">Green Theme</string>
+    <string name="dark_theme">Dark Theme</string>
+
+    <string name="logo_header">Logo:</string>
+    <string name="firebase_logo_label">Firebase Auth</string>
+    <string name="google_logo_label">Google</string>
+    <string name="no_logo_label">None</string>
+
+    <string name="auth_providers_header">Use auth providers:</string>
+    <string name="google_label">Google</string>
+    <string name="facebook_label">Facebook</string>
+    <string name="twitter_label">Twitter</string>
+    <string name="email_label">Email</string>
+    <string name="phone_label">Phone</string>
+
+    <string name="configuration_required">Configuration is required - please contact the developers</string>
+    <string name="google_label_missing_config">Google - configuration missing</string>
+
+    <string name="tos_header">Terms of Service URL:</string>
+    <string name="google_tos_label">Google TOS</string>
+    <string name="firebase_tos_label">Firebase TOS</string>
+
+    <string name="privacy_policy_header">Privacy Policy URL:</string>
+    <string name="google_privacy_label">Google Privacy Policy</string>
+    <string name="firebase_privacy_label">Firebase Privacy Policy</string>
+
+    <string name="extra_google_scopes">Example extra Google scopes</string>
+    <string name="drive_file_scope">Drive File</string>
+    <string name="youtube_data_scope">Youtube data</string>
+
+    <string name="other_options_header">Other Options:</string>
+    <string name="enable_credential_selector">Enable Smart Lock\'s credential selector</string>
+    <string name="enable_hint_selector">Enable Smart Lock\'s hint selector</string>
+    <string name="allow_new_email_acccount">Allow account creation if email does not exist.</string>
+    <string name="require_name">Require first/last name with email accounts.</string>
+
+    <string name="unknown_response">Unexpected onActivityResult response code</string>
+    <string name="unknown_sign_in_response">Unknown response from AuthUI sign-in</string>
+    <string name="sign_in_cancelled">Sign in cancelled</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="unknown_error">An unknown error occurred</string>
+
+    <!-- Auth UI - Signed in -->
+    <string name="signed_in_header">You are a wizard!</string>
+    <string name="sign_out">Sign out</string>
+    <string name="delete_account_label">Go back</string>
+
+    <string name="sign_out_failed">Sign out failed</string>
+    <string name="delete_account_failed">Delete account failed</string>
+
+    <string name="user_profile_header">User profile:</string>
+    <string name="profile_picture_content_desc">Profile picture</string>
+    <string name="idp_token">IDP Token</string>
+    <string name="idp_secret">IDP Secret</string>
+
+    <!-- Storage -->
+    <string name="choose_image">Choose Image</string>
+    <string name="upload">Upload</string>
+    <string name="download">Download</string>
+    <string name="send">Send</string>
+    <string name="accessibility_downloaded_image">Downloaded image</string>
+
+    <string name="rational_image_perm">This sample will read an image from local storage to upload to Cloud Storage.</string>
+
+    <!-- Database -->
+    <string name="start_chatting">No messages. Start chatting at the bottom!</string>
+    <string name="signing_in">Signing in…</string>
+    <string name="signed_in">Signed In</string>
+    <string name="anonymous_auth_failed_msg">
+        Anonymous authentication failed, various components of the App will not work.
+        Consider reporting this issue to the developers.
+    </string>
+
+    <string name="language">Change Language</string>
+
+    <string name="loadingWatchlist">Refreshing your Watchlist.\n This could take a few seconds…</string>
+
+    <string name="not_logged_in">Please log in to be able to save series to your personal list.</string>
+
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
 </resources>
