@@ -22,6 +22,7 @@ import com.google.firebase.iid.FirebaseInstanceId;
 import org.json.JSONException;
 
 import origamify.com.origamitest.auth.AuthUiActivity;
+import origamify.com.origamitest.slide.SlideMain;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -96,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("FIREBASE TOKEN", FirebaseInstanceId.getInstance().getToken());
                 Toast.makeText(getApplicationContext(), "You pressed a button", Toast.LENGTH_LONG).show();
                 Context context = getApplicationContext();
-                Intent abc = new Intent(context, AuthUiActivity.class);
+                Intent abc = new Intent(context, SlideMain.class);
                 context.startActivity(abc);
             }
         });

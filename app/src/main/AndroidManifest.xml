@@ -17,6 +17,7 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,6 +28,16 @@
         <activity
             android:name=".SettingsActivity"
             android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="origamify.com.origamitest.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".slide.SlideMain"
+            android:screenOrientation="portrait"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -54,9 +65,11 @@
         <!-- Auth UI demo -->
         <activity
             android:name=".auth.AuthUiActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_auth_activity" />
         <activity
             android:name=".auth.SignedInActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_auth_activity" />
 
         <!-- This meta-data tag is required to use Google Play Services. -->
