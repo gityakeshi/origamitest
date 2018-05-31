@@ -11,6 +11,12 @@
         android:layout_height="200dp"
         android:id="@+id/slideimg"/>
 
+    <origamify.com.origamitest.GifImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/GifImageView"
+    />
+
     <TextView
         android:padding="16dp"
         android:id="@+id/txttitle"

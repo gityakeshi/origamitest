@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import origamify.com.origamitest.GifImageView;
 import origamify.com.origamitest.R;
 
 public class SlideAdapter extends PagerAdapter {
@@ -26,14 +27,14 @@ public class SlideAdapter extends PagerAdapter {
     };
     // list of titles
     public String[] lst_title = {
-            "COSMONAUT",
+            "STEP 1",
             "SATELITE",
             "GALAXY",
             "ROCKET"
     }   ;
     // list of descriptions
     public String[] lst_description = {
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+            "Do this: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
@@ -66,6 +67,8 @@ public class SlideAdapter extends PagerAdapter {
         inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
         View view = inflater.inflate(R.layout.slide,container,false);
         LinearLayout layoutslide = (LinearLayout) view.findViewById(R.id.slidelinearlayout);
+        GifImageView gifImageView = (GifImageView) view.findViewById(R.id.GifImageView);
+        gifImageView.setGifImageResource(R.drawable.origami);
         ImageView imgslide = (ImageView)  view.findViewById(R.id.slideimg);
         TextView txttitle= (TextView) view.findViewById(R.id.txttitle);
         TextView description = (TextView) view.findViewById(R.id.txtdescription);
