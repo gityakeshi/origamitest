@@ -18,13 +18,13 @@ public class SlideAdapter extends PagerAdapter {
     Context context;
     LayoutInflater inflater;
 
-    // list of images
-    public int[] lst_images = {
-            R.drawable.image_1,
-            R.drawable.image_2,
-            R.drawable.image_3,
-            R.drawable.image_4
-    };
+//    // list of images
+//    public int[] lst_images = {
+//            R.drawable.image_1,
+//            R.drawable.image_2,
+//            R.drawable.image_3,
+//            R.drawable.image_4
+//    };
     // list of titles
     public String[] lst_title = {
             "STEP 1",
@@ -45,6 +45,13 @@ public class SlideAdapter extends PagerAdapter {
             Color.rgb(239,85,85),
             Color.rgb(110,49,89),
             Color.rgb(1,188,212)
+    };
+    // list of gifs
+    public int[]  lst_gifs = {
+            R.drawable.origami,
+            R.drawable.origami_2,
+            R.drawable.origami,
+            R.drawable.origami_2
     };
 
 
@@ -68,12 +75,12 @@ public class SlideAdapter extends PagerAdapter {
         View view = inflater.inflate(R.layout.slide,container,false);
         LinearLayout layoutslide = (LinearLayout) view.findViewById(R.id.slidelinearlayout);
         GifImageView gifImageView = (GifImageView) view.findViewById(R.id.GifImageView);
-        gifImageView.setGifImageResource(R.drawable.origami);
         ImageView imgslide = (ImageView)  view.findViewById(R.id.slideimg);
         TextView txttitle= (TextView) view.findViewById(R.id.txttitle);
         TextView description = (TextView) view.findViewById(R.id.txtdescription);
         layoutslide.setBackgroundColor(lst_backgroundcolor[position]);
-        imgslide.setImageResource(lst_images[position]);
+//        imgslide.setImageResource(lst_images[position]);
+        gifImageView.setGifImageResource(lst_gifs[position]);
         txttitle.setText(lst_title[position]);
         description.setText(lst_description[position]);
         container.addView(view);
